@@ -1,0 +1,320 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+/*hasta aqui lo pegado de internet*/
+
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        font-family: 'Amatic SC', cursive;
+        color: black; 
+        background-color: white;  
+
+    }    
+    h1 span {
+        all:origin;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 80px;    
+    }
+    h1 {
+        width: 48%;
+        font-family: 'Amatic SC', cursive;
+        padding-left: 15px;
+        font-size: 85px ;
+    }
+    
+    h2 {
+        width: 48%;
+        padding-left: 15px;
+        padding-right: 0px;
+        font-size: 85px;
+        padding-left: 5%;
+    }
+
+    span{
+        all: origin;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    h3 span {
+        all:origin;
+        font-size: 50px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .container {
+        display: flex;
+        width: 97vw;
+        margin-top: 0px;
+        background-color: white;
+        flex-direction: row;  
+    }
+/* en hoja contact*/
+
+    header.top-contact {
+        width: 88vw;
+}
+    .description {
+        height: 100vh;
+        display: flex;
+        margin:0px;
+        justify-content: baseline;
+    }
+    .all {
+        height: 100vs;
+    }
+    
+    nav {
+        margin-top: 0;
+    }
+    .under-left {
+        background-image: url("../IMG/pixel_roja_2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 48%;
+        padding: 6px;
+        padding-left: 8px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .under-right {
+        background-color: white;
+        width: 48%;
+        padding: 6px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 25px;
+        font-weight: bold;
+        
+    }   
+
+    ul {
+        
+        margin-top: 0;
+        padding-left: 20px;
+        list-style:none;
+        padding-inline-start: none !important;
+    }
+    li {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        font-size: 50px;
+        color: black;
+        background-color: white;
+    }
+    li:hover {
+        background-color: #f50029;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 70px;
+        font-weight: bold;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        padding:0px;
+        margin:0px;
+
+    }
+
+    h3 {
+        margin-top: 20px;
+        margin-right: 5%;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        background-color: white;  
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0px;
+        height: 40px;
+        width: 100%;
+        background-color:white;
+    }
+
+    footer p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+/* contact*/
+
+    .todo-form {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        
+    }
+    .top-contact h1 {
+        width: 100vw;
+        background-color: black;
+        color: white;
+    }
+
+    .cont-box {
+        display: flex;   
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+        padding: 15 5 0 5;
+        background-image: url("../IMG/pixel_blanca_b.jpg");
+        /*background-color: #ff002b;*/
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position:cover;
+       
+    }
+    
+    .home {
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        background-color: #f50029;
+        color:white
+    }
+    p.home {
+        text-align: center;
+        
+        font-size: 15px;
+    }
+    .comments {
+        
+        margin-top: 8%;
+        margin-right: 13%;
+        width: 60%;  
+        height: 60%;      
+        top: 40px;
+        left: 40px;
+        bottom: 40px;
+        background-color: black;   
+    }
+    
+    
+    legend {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    fieldset {
+        display: block;
+        margin: 6 6 6 6;
+        width: 60%;
+        border-collapse: collapse;
+        border-color:solid white;
+        border-width: 4px;
+    }
+    textarea {
+        color: grey;
+        font-size: 35px;
+        font-weight: bold;
+        margin-left: 50px;
+        padding-left: 50px;
+    
+    }
+      
+    input {
+        margin-left: 50px;
+        padding-left: 50px;
+        font-weight: bold;
+        font-size: 30px;
+        text-align: left;       
+    } 
+
+.content-bio {
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+} 
+
+h2.bio {
+    margin: 5% 5% 5% 5%;;
+    background-color: white;
+    font-size: 25px;
+    width: 25%;
+}
+.main-bio {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../IMG/pixel_roja_2.jpg");
+    background-position: right;
+    background-color: #f50029;
+}
