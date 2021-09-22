@@ -185,6 +185,45 @@ select {
         font-size: 70px;
         font-weight: bold;
     }
+/*lista en portfolio*/
+        
+        dl {
+            margin-top: 5%;
+        }
+
+
+        dt {
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            font-size: 50px;
+            color: black;
+            background-color: white;
+        }
+        dt:hover {
+                background-color: #f50029;
+                font-family: 'Amatic SC', cursive;
+                font-size: 70px;
+                font-weight: bold;
+
+        }
+        .hide {
+            display:none;
+            
+        }
+        dt:hover + .hide {
+            display: block;
+            font-family: 'Josefin Sans', sans-serif;
+            width: 100%;
+            font-size: 30px;          
+            height: 500px;
+            padding-right: 20%;
+            padding-left: 15%
+            opacity: 98%;
+            color: black;
+            background-color: white;
+        }
+
     a {
         color: black;
         text-decoration: none;
@@ -237,26 +276,26 @@ select {
         height: 100vh;
         padding: 15 5 0 5;
         background-image: url("../IMG/pixel_blanca_b.jpg");
-        /*background-color: #ff002b;*/
         justify-content: center;
         background-repeat: no-repeat;
         background-position:cover;
-       
+   
     }
     
-    .home {
-        width: 60px;
-        height: 60px;
+    button {
+        position: fixed;    
+        right: 3%;
+        top: 30%;
+        width: 45px;
+        height: 45px;
         border-radius: 100px;
-        background-color: #f50029;
-        color:white
+        background-color: white
     }
-    p.home {
-        text-align: center;
-        
-        font-size: 15px;
+    
+    .contact-button {
+        background-color: f50029;
     }
-    .comments {
+    .comments{
         
         margin-top: 8%;
         margin-right: 13%;
@@ -275,6 +314,7 @@ select {
         font-weight: bold;
     }
     fieldset {
+        
         display: block;
         margin: 6 6 6 6;
         width: 60%;
@@ -299,22 +339,60 @@ select {
         text-align: left;       
     } 
 
-.content-bio {
-    display: flex;
-    flex-direction: column;
-    background-attachment: fixed;
-} 
+    .content-bio {
+        display: flex;
+        flex-direction: column;
+        background-attachment: fixed;
+    } 
+    h1.bio {
+        width: 97vw;
+    }
+    h2.bio {
+        margin: 5% 5% 5% 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: white;
+        font-size: 35px;
+        width: 65%;
+    }
+    .main-bio {
+        display: flex;
+        flex-direction: column;
+        align-items: space-evenly ;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../IMG/pixel_roja_2.jpg");
+        background-position: right;
+        background-color: #f50029;
+    }
+    .formación p {
+        width: 50vw;
+        background-color: white;
+        font-family: 'Amatic SC', cursive;
+        font-size: 20px;
+        padding-top: 1%;
+        margin-left: 20%;
+        padding-left: 3%;
+    }
 
-h2.bio {
-    margin: 5% 5% 5% 5%;;
-    background-color: white;
-    font-size: 25px;
-    width: 25%;
-}
-.main-bio {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../IMG/pixel_roja_2.jpg");
-    background-position: right;
-    background-color: #f50029;
-}
+    .formación p:hover {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 30px;
+    }
+
+
+/*PORTFOLIO*/
+    .h1-portfolio {
+        width: 100vw;
+    }   
+    .list-portfolio {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../IMG/pixel_roja_2.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-color: #f50029;
+    }
